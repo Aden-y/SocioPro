@@ -1,0 +1,618 @@
+.inputErr{
+	color: red;
+	display: block;
+	width: 100%;
+}
+body{
+background-color:#F0F0F0;
+margin: 0;
+}
+.hideme{
+	display: none;
+}
+.failureDiv{
+	background-color: red;
+	color: white;
+	width: 90%;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 8px;
+	border-radius: 5px;
+
+}
+.succesBar{
+	background-color: green;
+	color: white;
+	border-radius: 20px;
+	font-size: 12px;
+
+	 
+}
+.topNav{
+width: 100%;
+background-color: #008CBA;;
+height: 60px;
+position: fixed;
+margin: 0;
+top: 0;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family:Arial, Helvetica, Sans-serif;
+	/*font-size: 12px;*/
+	 box-sizing: border-box;
+
+}
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 100%;
+}
+.logo{
+	max-width: 125px;
+	height: 100%;
+margin-left: 1%;
+}
+.logo img{
+	width: 150px;
+	height: 40px;
+}
+.logoText{
+	color : white;
+	font-size: 22px;
+	top: 15px;
+	height: 100%;
+	font-family: Arial Rounded MT;
+	margin-left: 1%;
+	margin-top: 0px;
+	padding-top: 16px;
+	text-align: center;
+
+}
+.searchBox{
+	position: absolute;
+	top: 10px;
+	margin-left: 15%;
+
+}
+#search input[type="text"]{
+	outline:none;
+	border:0 none;
+	font: bold 12px Arial;
+	max-width :150px;
+	padding: 6px 15px 6px 35px;
+	text-shadow: 0 2px 2px brown;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1), 0 1px 3px rgba(0,0,0,0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1), 0 1px 3px rgba(0,0,0,0.2) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.1), 0 1px 3px rgba(0,0,0,0.2) inset;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+
+	-o-transition : all 0.7s ease 0s;
+	transition: all 0.7 ease 0s;
+
+
+
+}
+.topNavMenu{
+	left: 35%;
+	margin-top: 0px;
+	height: 100%;
+}
+.topNavMenu li{
+	height: 100%;
+	list-style: none;
+	margin: auto;
+   overflow: hidden;
+}
+@media screen and (max-width: 1280px){
+#topNavMenu{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 37px;
+	padding-top: 19px;
+	margin-right: 4%;
+
+}
+}
+@media screen and (min-width: 1280px){
+#topNavMenu{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 37px;
+	padding-top: 19px;
+	margin-right: 10%;
+}
+}
+@media screen and (min-width: 1920px){
+#topNavMenu{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 37px;
+	padding-top: 19px;
+	margin-right: 25%;
+}
+}
+#search input[type="text"]:focus{
+	color: #6a6f75;
+	outline:none;
+	border:0 none;
+	font: bold 18px Arial;
+	max-width :250px;
+	padding: 6px 15px 6px 35px;
+	text-shadow: 0 2px 2px brown;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1), 0 1px 3px rgba(0,0,0,0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1), 0 1px 3px rgba(0,0,0,0.2) inset;
+	text-shadow: 0.2px 3px rgba(0,0,0,0.1);
+
+}
+
+#topNavMenu a{
+color: white;
+font-size:14px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 22px;
+text-decoration: none;
+margin: 0px;
+height: 100%;
+
+
+
+}
+.inputSearch{
+	background-image: url("../img/search.png");
+}
+#topNavMenu a:hover{
+	background-color:#1a8bff;
+	text-decoration: underline;
+}
+.mycontainer{
+	padding: 0;
+    margin-top: 45px;
+    max-width: 90%;
+    overflow-x: auto;
+
+}
+.mycard{
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 background-color:#e7e7e7; 
+	 margin-top: 2%;
+	 align-self: center;
+	width: 520px;
+	 float: center;
+	 border-radius: 10px;
+
+
+}
+form input{
+	border: none;
+	min-width: 200px;
+	height: 25px;
+	padding-left:  15px;
+	border-radius: 5px;
+
+}
+
+.inputLabel{
+padding: 15px;
+display: block;
+}
+.cardHeader{
+padding: 1%;
+margin-top: 2%;
+width: 450px;
+height:10%;
+background-color: #ccccb2;
+
+}
+.formBtn{
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: #47d147;
+	border:none;
+	left: 70%;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.inputHolder{
+display: block;
+}
+.cardFooter{
+	height: 10%;
+	width: 450px;
+	background-color: #ccccb2;
+	margin-top: 15px;
+	padding: 20px;
+}
+.cardFooter a{
+text-decoration: none;
+
+
+}
+.userdetails input{
+
+}
+.userdetails{
+	width: 100%;
+}
+.footerWraper{
+	width: 100%;
+	height: 150px;
+	margin: auto;
+	padding: 20px;
+	 background-color: #333;
+	 color: white;
+}
+.footerItems{
+	color: white;
+	margin: auto;
+	max-width:350px;
+	padding: 20px;
+}
+.footerItems ul a{
+	color:white;
+	margin-left:  30px;
+	text-decoration: none;
+}
+footer{
+	margin-top: 150px;
+}
+.leftMenu{
+	background-color: #333;
+	max-width: 300px;
+	color: white;
+	padding-top: 30px;
+   padding-bottom: 5px; 
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ max-height: 1000px;
+ overflow-y: auto;
+ float: left;
+ display: inline-block;
+ min-width: 250px;
+
+}
+.toholdusername{
+	margin: auto;
+	margin-bottom: 25px;
+	padding-left: 25px;
+}
+.toholdprofilepic{
+	max-width: 150px;
+	max-height: 150px;
+	margin: auto;
+}
+.toholdprofilepic img{
+	max-width: 150px;
+	max-height: 150px;
+	border-radius: 50%;
+background-color:#F0F0F0;
+margin: 0;
+}
+.toholdleftmenulinks{
+	margin: 0;
+	padding: 15px;
+	width: 100%;
+	color: white;
+}
+.toholdleftmenulinks a{
+	color: white;
+	text-decoration: none;
+	width: 100%;
+
+}
+.toholdleftmenulinks:hover,.toholdleftmenulinks a:hover{
+	background-color: #e0e0d1;
+	color: black;
+	font-style: bold;
+
+}
+.numSpan{
+	float: right;
+}
+img.iconImg{
+	max-width: 15px;
+	max-height: 15px;
+	display: inline;
+}
+.topnavprofilepic{
+	float: right;
+	height: 100%;
+	background-color: red;
+
+}
+.topnavprofilepic img{
+
+}
+.accountSettings{
+	background-color:  #d9d9d9;
+	max-width :75%;
+	/*height: 100%;*/
+	display: inline-block;
+	margin-left: 20px;
+	padding: 25px;
+	border-top: solid 3px  #001933;
+	border-bottom: solid 3px #001933;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.inlinelabel{
+	margin-top: 5px;
+
+}
+.toholdupdateprofileform{
+	padding: 20px;
+	margin-top: 15px;
+	background-color: #c2d6d6;
+	border-radius: 7px;
+	display: inline-block;
+	float: left;
+}
+.inputHolderupdateuserDetails{
+
+}
+.inputHolderupdateuserDetails input{
+float: left;
+}
+.btnsuccess{
+	background-color: green;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	border: none;
+	margin: 10px;
+
+}
+.btndanger{
+	background-color: red;
+	color: black;
+	border-radius: 2px;
+	padding: 10px;
+	border: none;
+	margin: 10px;
+}
+.btneditinline{
+	float: right;
+	margin: 2px;
+	border: none;
+	background-color: inherit;
+
+
+
+}
+.uploadprofilepic{
+	float: left;
+	margin-left: 25px;
+	background-color: inherit;
+	display: inline-block;
+	padding: 20px;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+table{
+	margin-top: 25px;
+}
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+.iconImgtd{
+	margin-left: 25px;
+	float: left;
+}.profilepicontimeline{
+	max-width: 450px;
+	max-height: 250px;
+}
+.postdateholder{
+	float: right;
+}
+.optionsicon{
+	max-height: 20px;
+	max-height: 20px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.likers{
+	text-decoration: none;
+	color: blue;
+}
+.btncoment{
+	border: none;
+	background-color: inherit;
+	max-width: 100px;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+}
+.btnlike{
+	margin: 20px;
+	color: white;
+	padding: 5px;
+	border-radius: 2px;
+	max-width: 90px;
+	background-color: #1a66ff;
+	border: none;
+
+}
+.posttextarea{
+	margin: 20px;
+	border-radius: 5px;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 16px;
+}
+.btnpost{
+	padding:10px;
+	border-radius: 2px;
+	color: white;
+	background-color: #0066ff;
+	border: none;
+
+}
+.posterimage{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	margin-top: 10px;
+
+}
+.singleperson table ,td{
+	border: none;
+	padding-right: 30px;
+}
+td a{
+	text-decoration: none;
+	color: #00cc99;
+}
+.holdpeople{
+	min-height: 560px;
+	float: left;
+	display: inline-block;
+}
+.singlepersontr td{
+	padding-top:10px;
+}
+.toholdtimelineevents{
+	background-color: white;
+	padding: 25px;
+	margin: 0;
+	border-radius: 20px;
+}
+.commenttextarea{
+	padding: 15px;
+	margin-top: 10px;
+	border: solid 1px grey;
+	border-radius: 20px;
+	max-width: 80%;
+
+}
+.postimage{
+	max-width: 100%;
+}
+.profiletopnav{
+	width: 100%; margin-bottom: 25px; background-color: white; padding-bottom:15px;border-radius: 15px;
+	padding-top: 5px;
+	border-top: solid 2px #ff0066;
+	overflow: auto;
+
+}
+.postimageholder{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.msgsmall{
+	color: black;
+	font-size: 12px;
+	margin-right: 50px;
+}.chatbox{
+	display: inline-block;
+	float: left;
+	background: white;
+	padding-left: 10px;
+	max-width: 450px;
+}
+.chatbox{
+	padding-top: 20px;
+	border-top: solid 3px green;
+	border-radius: 5px;
+}
+.chatsholder{
+margin-top: 20px;
+padding: 10px;
+border-top: solid 3px green;
+}
+.recieved{
+	max-width: 100%;
+	background-color: #ffff00;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 10px;
+	border-radius: 10px;
+}
+.sent{
+	max-width: 100%;
+	background-color: #33ccff;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: right;
+	margin: 10px;
+	border-radius: 10px;
+
+}
+.typemsgetextarea{
+	width: 90%;
+	margin: 20px;
+	height: 80px;
+	border-radius: 10px;
+	padding: 15px;
+
+}
+.btnsendmesg{
+	float: right;
+	margin: 10px;
+	border: none;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #00ff99;
+
+}
+.Cancelfriend{
+	background-color: #ff3300;
+	padding: 7px;
+	border-radius: 5px;
+	border: none;
+}
+.acceptfriend{
+	background-color: #0066cc;
+	padding: 7px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+.requestsentbtn{
+	color: black;
+	background-color: #999999;
+		padding: 7px;
+	border-radius: 5px;
+	border: none;
+}
+.withdrawrequestbtn{
+		color: black;
+	background-color: #ff3300;
+		padding: 7px;
+	border-radius: 5px;
+	border: none;
+}
+.modellabel{
+	display: block;
+	margin: auto;
+}
+.model{
+	background-color:#d6d6c2;
+	max-width: 500px;
+
+}
+.friendsprofiletopnavbtn{
+	border: none;
+	font-size: 16px;
+	background-color:inherit;
+}
